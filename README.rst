@@ -32,13 +32,19 @@ For Python 3.6 Users
 --------------------
 Version `12.0.0`_ of this library is the last version that is compatible with
 Python 3.6. It contains support for `v6`_, `v7`_, and `v8`_ of the Google Ads
-API. The newest API version, `v8`_, will be supported until the Spring of 2022.
-Given that the `EOL`_ for Python 3.6 is December 23, 2021, we encourage our
-users to upgrade to Python 3.7 or above as soon as possible to avoid issues.
-Users who cannot upgrade can continue to safely use version `12.0.0`_ until
-`v8`_ of the Google Ads API is deprecated. Please follow the
-`Google Ads Developer Blog`_ for announcements of the specific deprecation
-dates for the above API versions.
+API. The latest API version supported by version `12.0.0`_, `v8`_, will be
+supported until the Spring of 2022, so Python 3.6 users can access the Google
+Ads API until then. Given that the `EOL`_ for Python 3.6 is December 23, 2021,
+we encourage our users to upgrade to Python 3.7 or above as soon as possible to
+avoid issues. Please follow the `Google Ads Developer Blog`_ for announcements
+of the specific deprecation dates for the above API versions.
+
+Protobuf Messages
+-----------------
+Version `14.0.0`_ of this library introduced the **required** `use_proto_plus`
+configuration option that specifies which type of protobuf message to use. For
+information on why this flag is important and what the differences are between
+the two message types, see the `Protobuf Messages`_ guide.
 
 Miscellaneous
 -------------
@@ -67,8 +73,10 @@ Authors
 .. _Andrew Burke: https://github.com/AndrewMBurke
 .. _Laura Chevalier: https://github.com/laurachevalier4
 .. _12.0.0: https://pypi.org/project/google-ads/12.0.0/
+.. _14.0.0: https://pypi.org/project/google-ads/14.0.0/
 .. _v6: https://developers.google.com/google-ads/api/reference/rpc/v6/overview
 .. _v7: https://developers.google.com/google-ads/api/reference/rpc/v7/overview
 .. _v8: https://developers.google.com/google-ads/api/reference/rpc/v8/overview
 .. _EOL: https://endoflife.date/python
 .. _Google Ads Developer Blog: https://ads-developers.googleblog.com/
+.. _Protobuf Messages: https://developers.google.com/google-ads/api/docs/client-libs/python/protobuf-messages
